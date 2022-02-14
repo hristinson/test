@@ -1,4 +1,4 @@
-const schema = 
+const schema2 = 
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://example.com/product.schema.json",
