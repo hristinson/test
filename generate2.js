@@ -265,8 +265,9 @@ function randomString(size) {
 
     if (schema.properties.process.anyOf) {
     let y = randomCoin()
-    if (randomCoin()) {obj.properties.process = "null"} else {obj.properties.process = randomString(15)}}
+    if (randomCoin()) {obj.properties.process = "null"} else {obj.properties.process = schema.properties.process.anyOf[1].pattern}}
     else {console.log("error 90"); process.exit(-1)}
+
 
     if(schema.properties.readOnly.type) {obj.properties.readOnly = randomCoin() }
 
